@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>HIKAKIN Shooting: Final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="story-bg" class="bg-layer"></div>
+        
+        <canvas id="gameCanvas" width="480" height="640"></canvas>
+
+        <div id="boss-warning" class="ui-layer"> </div>
+        <div id="otohame-layer" class="ui-layer"> </div>
+        <div id="kaiji-cutin" class="ui-layer"> </div>
+        <div id="ending-layer" class="ui-layer"> </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    
+    <script src="firebase-config.js"></script>
+    <script src="effects.js"></script>
+    <script src="boss-logic.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

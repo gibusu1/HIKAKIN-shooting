@@ -1,0 +1,25 @@
+#game-container {
+    position: relative;
+    width: 480px;
+    height: 640px;
+    margin: 0 auto;
+    background: #000;
+    overflow: hidden;
+}
+
+.bg-layer {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    transition: filter 1s;
+}
+
+.ui-layer {
+    display: none; /* 基本は非表示 */
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+/* 空間破断エフェクト */
+.space-broken { filter: invert(1) blur(2px); }
