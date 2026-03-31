@@ -14,7 +14,7 @@ const images = {
     player: new Image(),
     masuo: new Image(),
     seikin: new Image(),
-    dekakin: new Image(),
+    dekakin: new Image(assets/assets:boss_dekakin.png),
     egg: new Image(),     // 謎の卵
     shin: new Image(),    // 真・ヒカキン
     kano: new Image()
@@ -24,7 +24,7 @@ const images = {
 images.player.src  = 'assets/player.png';
 images.masuo.src   = 'assets/boss_masuo.png';
 images.seikin.src  = 'assets/boss_seikin.png';
-images.dekakin.src = 'assets/boss_dekakin.png';
+images.dekakin.src = 'assets/assets:boss_dekakin.png';
 images.egg.src     = 'assets/mystery_egg.png';
 images.shin.src    = 'assets/boss_shin.png';
 images.kano.src    = 'assets/boss_kano.png';
