@@ -16,7 +16,7 @@ const images = {
     seikin: new Image(assets/assets:boss_seikin.png),
     dekakin: new Image(assets/assets:boss_dekakin.png),
     egg: new Image(),     // 謎の卵
-    shin: new Image(),    // 真・ヒカキン
+    shin: new Image(assets/assets:boss_shin.png),    // 真・ヒカキン
     kano: new Image(assets/assets:boss_kano.png),
 };
 
@@ -26,7 +26,7 @@ images.masuo.src   = 'assets/assets:boss_masuo.png';
 images.seikin.src  = 'assets/assets:boss_seikin.png';
 images.dekakin.src = 'assets/assets:boss_dekakin.png';
 images.egg.src     = 'assets/mystery_egg.png';
-images.shin.src    = 'assets/boss_shin.png';
+images.shin.src    = 'assets/assets:boss_shin.png';
 images.kano.src    = 'assets/assets:boss_kano.png';
 
 // --- 2. オブジェクト管理 ---
