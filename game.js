@@ -11,23 +11,23 @@ let score = 0;
 
 // --- 1. 画像アセット ---
 const images = {
-    player: new Image(assets/assets:player.png),
-    masuo: new Image(assets/assets:boss_masuo.png),
-    seikin: new Image(assets/assets:boss_seikin.png),
-    dekakin: new Image(assets/assets:boss_dekakin.png),
-    egg: new Image(assets/assets:mystery_egg.png),     // 謎の卵
-    shin: new Image(assets/assets:boss_shin.png),    // 真・ヒカキン
-    kano: new Image(assets/assets:boss_kano.png),
+    player: new Image(),
+    masuo: new Image(),
+    seikin: new Image(),
+    dekakin: new Image(),
+    egg: new Image(),
+    shin: new Image(),
+    kano: new Image()
 };
 
-// パス設定（assetsフォルダ内のファイル名と一致させてください）
-images.player.src  = 'assets/assets:player.png';
-images.masuo.src   = 'assets/assets:boss_masuo.png';
-images.seikin.src  = 'assets/assets:boss_seikin.png';
-images.dekakin.src = 'assets/assets:boss_dekakin.png';
-images.egg.src     = 'assets/assets:mystery_egg.png';
-images.shin.src    = 'assets/assets:boss_shin.png';
-images.kano.src    = 'assets/assets:boss_kano.png';
+// パス設定：コロンを消して、シンプルな名前にします
+images.player.src  = 'assets/player.png';
+images.masuo.src   = 'assets/boss_masuo.png';
+images.seikin.src  = 'assets/boss_seikin.png';
+images.dekakin.src = 'assets/boss_dekakin.png';
+images.egg.src     = 'assets/mystery_egg.png';
+images.shin.src    = 'assets/boss_shin.png';
+images.kano.src    = 'assets/boss_kano.png';
 
 // --- 2. オブジェクト管理 ---
 let player = { x: 215, y: 550, w: 50, h: 50, hp: 100, speed: 5 };
