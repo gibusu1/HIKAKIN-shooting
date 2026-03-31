@@ -11,7 +11,7 @@ let score = 0;
 
 // --- 1. 画像アセット ---
 const images = {
-    player: new Image(),
+    player: new Image(assets/assets:player.png),
     masuo: new Image(assets/assets:boss_masuo.png),
     seikin: new Image(assets/assets:boss_seikin.png),
     dekakin: new Image(assets/assets:boss_dekakin.png),
@@ -21,7 +21,7 @@ const images = {
 };
 
 // パス設定（assetsフォルダ内のファイル名と一致させてください）
-images.player.src  = 'assets/player.png';
+images.player.src  = 'assets/assets:player.png';
 images.masuo.src   = 'assets/assets:boss_masuo.png';
 images.seikin.src  = 'assets/assets:boss_seikin.png';
 images.dekakin.src = 'assets/assets:boss_dekakin.png';
