@@ -20,29 +20,15 @@ const images = {
     kano: new Image()
 };
 
-// パス設定：コロンを消して、シンプルな名前にします
-images.player.src  = 'assets/player.png';
-images.masuo.src   = 'assets/boss_masuo.png';
-images.seikin.src  = 'assets/boss_seikin.png';
-images.dekakin.src = 'assets/boss_dekakin.png';
-images.egg.src     = 'assets/mystery_egg.png';
-images.shin.src    = 'assets/boss_shin.png';
-images.kano.src    = 'assets/boss_kano.png';
+// あなたの現在のファイル名（assets:〇〇）に完全に合わせます
+images.player.src  = 'assets/assets:player.png';
+images.masuo.src   = 'assets/assets:boss_masuo.png';
+images.seikin.src  = 'assets/assets:boss_seikin.png';
+images.dekakin.src = 'assets/assets:boss_dekakin.png';
+images.egg.src     = 'assets/assets:mystery_egg.png';
+images.shin.src    = 'assets/assets:boss_shin.png';
+images.kano.src    = 'assets/assets:boss_kano.png';
 
-// --- 2. オブジェクト管理 ---
-let player = { x: 215, y: 550, w: 50, h: 50, hp: 100, speed: 5 };
-let playerBullets = [];
-let enemyBullets = [];
-
-// ボスデータ（卵を経て真・ヒカキンへ）
-const bossData = [
-    { type: 'masuo',   name: "復讐のマスオ", hp: 3000, maxHp: 3000 },
-    { type: 'seikin',  name: "覚醒のセイキン", hp: 5000, maxHp: 5000 },
-    { type: 'dekakin', name: "暴走のデカキン", hp: 8000, maxHp: 8000 },
-    { type: 'egg',     name: "謎の卵", hp: 1500, maxHp: 1500 }, // 攻撃すると割れる
-    { type: 'shin',    name: "真・ヒカキン", hp: 15000, maxHp: 15000 },
-    { type: 'kano',    name: "狩野英孝", hp: 99999, maxHp: 99999, isUnderstanding: false }
-];
 let currentBossIdx = 0;
 let activeBoss = { ...bossData[0], x: 190, y: 80, w: 100, h: 100, state: 'NORMAL' };
 
