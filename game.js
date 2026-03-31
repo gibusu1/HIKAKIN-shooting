@@ -12,7 +12,7 @@ let score = 0;
 // --- 1. 画像アセット ---
 const images = {
     player: new Image(),
-    masuo: new Image(),
+    masuo: new Image(assets/assets:boss_masuo.png),
     seikin: new Image(),
     dekakin: new Image(assets/assets:boss_dekakin.png),
     egg: new Image(),     // 謎の卵
@@ -22,7 +22,7 @@ const images = {
 
 // パス設定（assetsフォルダ内のファイル名と一致させてください）
 images.player.src  = 'assets/player.png';
-images.masuo.src   = 'assets/boss_masuo.png';
+images.masuo.src   = 'assets/assets:boss_masuo.png';
 images.seikin.src  = 'assets/boss_seikin.png';
 images.dekakin.src = 'assets/assets:boss_dekakin.png';
 images.egg.src     = 'assets/mystery_egg.png';
