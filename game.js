@@ -17,7 +17,7 @@ const images = {
     dekakin: new Image(assets/assets:boss_dekakin.png),
     egg: new Image(),     // 謎の卵
     shin: new Image(),    // 真・ヒカキン
-    kano: new Image()
+    kano: new Image(assets/assets:boss_kano.png),
 };
 
 // パス設定（assetsフォルダ内のファイル名と一致させてください）
@@ -27,7 +27,7 @@ images.seikin.src  = 'assets/boss_seikin.png';
 images.dekakin.src = 'assets/assets:boss_dekakin.png';
 images.egg.src     = 'assets/mystery_egg.png';
 images.shin.src    = 'assets/boss_shin.png';
-images.kano.src    = 'assets/boss_kano.png';
+images.kano.src    = 'assets/assets:boss_kano.png';
 
 // --- 2. オブジェクト管理 ---
 let player = { x: 215, y: 550, w: 50, h: 50, hp: 100, speed: 5 };
